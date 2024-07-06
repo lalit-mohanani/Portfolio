@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import hmp from "../../Assets/Projects/hmp.png";
-import smartnaka from "../../Assets/Projects/smartnaka.png";
+import kaws from "../../Assets/Projects/kaws.png";
 import gc from "../../Assets/Projects/gc.png";
-import wiss from "../../Assets/Projects/wiss.png";
+import alma from "../../Assets/Projects/alma.png";
 import echochat from "../../Assets/Projects/echochat.png";
 
 function Projects() {
@@ -20,7 +20,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={gc}
               isBlog={false}
@@ -29,9 +29,9 @@ function Projects() {
               ghLink="https://github.com/SamMathelete/gc-webathon"
               demoLink="https://gc-webathon.vercel.app/"
             />
-          </Col>
+          </Col> */}
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={echochat}
               isBlog={false}
@@ -40,7 +40,7 @@ function Projects() {
               ghLink="https://github.com/hv789/chatApp-IMBY-SE"
               demoLink="https://echochat.vercel.app/"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -53,7 +53,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={smartnaka}
               isBlog={false}
@@ -62,16 +62,26 @@ function Projects() {
               ghLink="https://github.com/hv789/smart-naka"
               demoLink="https://expo.dev/accounts/hv789/projects/smart-naka/builds/ce701497-2a84-4bd1-b93b-01bb7d6e226e"              
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={wiss}
+              imgPath={alma}
               isBlog={false}
-              title="Wissenaire '23"
-              description="Was a frequent contributor to the Wissenaire '23 app. Wissenaire is the annual techno-management fest of IIT Bhubaneswar."
+              title="Almafiesta'23"
+              description="Was responsible for to the Almafiesta'23 Website. Alma Fiesta is the annual Socio-Cultural fest of IIT Bhubaneswar."
               ghLink=""
-              demoLink="wissenaire.org"
+              demoLink="https://almafiesta.in"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={kaws}
+              isBlog={false}
+              title="KAWS Implementation"
+              description="Collaborated on the implementation of the KAWS research paper in a GPGPU simulator as part of a Computer Architecture course."
+              ghLink=""
+              demoLink="https://github.com/lalit-mohanani/KAWS-Implementation"
             />
           </Col>
         </Row>
